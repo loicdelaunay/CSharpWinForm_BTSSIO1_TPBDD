@@ -35,6 +35,7 @@
             this.lbl_login = new System.Windows.Forms.Label();
             this.lbl_lesLbls = new System.Windows.Forms.Label();
             this.lbl_motDePasse = new System.Windows.Forms.Label();
+            this.btn_Ok = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBox_login
@@ -98,11 +99,22 @@
             this.lbl_motDePasse.TabIndex = 6;
             this.lbl_motDePasse.Text = "Service";
             // 
+            // btn_Ok
+            // 
+            this.btn_Ok.Location = new System.Drawing.Point(203, 205);
+            this.btn_Ok.Name = "btn_Ok";
+            this.btn_Ok.Size = new System.Drawing.Size(75, 23);
+            this.btn_Ok.TabIndex = 7;
+            this.btn_Ok.Text = "OK";
+            this.btn_Ok.UseVisualStyleBackColor = true;
+            this.btn_Ok.Click += new System.EventHandler(this.btn_Ok_Click);
+            // 
             // Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 261);
+            this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.lbl_motDePasse);
             this.Controls.Add(this.lbl_lesLbls);
             this.Controls.Add(this.lbl_login);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Label lbl_login;
         private System.Windows.Forms.Label lbl_lesLbls;
         private System.Windows.Forms.Label lbl_motDePasse;
+        private System.Windows.Forms.Button btn_Ok;
     }
 }
